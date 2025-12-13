@@ -137,6 +137,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               Services
             </a>
           </li>
+           <li>
+            <a className="font-Ovo" href="#skills">
+              Skills
+            </a>
+            </li>
           <li>
             <a className="font-Ovo" href="#work" onClick={closeMenu}>
               My Work

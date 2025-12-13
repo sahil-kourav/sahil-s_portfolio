@@ -74,6 +74,7 @@ export const assets = {
   right_arrow_bold_dark,
 };
 
+
 export const workData = [
   {
     id: 1,
@@ -258,20 +259,6 @@ export const experiences = [
     duration: "2022",
     description:
       "Built high-performance applications, integrated AI features, and improved user engagement.",
-  },
-  {
-    role: "Web Developer Intern",
-    company: "Mobisoft Technologies",
-    duration: "2022 - 2023",
-    description:
-      "Developed responsive interfaces and contributed to production-ready features.",
-  },
-  {
-    role: "Web Developer Intern",
-    company: "Mobisoft Technologies",
-    duration: "2022 - 2023",
-    description:
-      "Developed responsive interfaces and contributed to production-ready features.",
   },
   {
     role: "Web Developer Intern",

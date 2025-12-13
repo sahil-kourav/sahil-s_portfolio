@@ -127,7 +127,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] 
+      className='w-full px-[7%] md:px-[10%] lg:px-[10%] py-20 min-h-screen bg-[url("/footer-bg-color.png")] 
                  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
     >
       {/* --- Section Title --- */}
@@ -189,7 +189,7 @@ const Contact = () => {
           transition={{ duration: 0.3 }}
           type="submit"
           className="py-3 px-8 w-max flex items-center justify-between gap-2 
-                     bg-black/80 text-white rounded-full mx-auto 
+                     bg-black/80 text-white rounded-xl mx-auto 
                      hover:bg-black duration-500 dark:bg-transparent 
                      dark:border-[0.5px] dark:hover:bg-darkHover"
         >

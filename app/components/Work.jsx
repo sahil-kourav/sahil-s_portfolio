@@ -7,7 +7,7 @@ const Work = ({ isDarkMode }) => {
   return (
     <section
       id="work"
-      className="w-full px-[10%] py-20 scroll-mt-20 bg-transparent"
+      className="w-full px-[7%] md:px-[10%] lg:px-[10%] min-h-screen my-12 bg-transparent"
     >
       {/* Section Heading */}
       <div className="text-center space-y-3">
@@ -24,11 +24,10 @@ const Work = ({ isDarkMode }) => {
       </div>
 
       {/* Project Cards */}
-      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-16">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10">
         {workData.map((project, index) => (
           <div
             key={index}
-            // className="bg-white dark:bg-[#111] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200 dark:border-gray-800"
             className="bg-white dark:bg-[#11111127] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 transition-all duration-500 hover:shadow-black cursor-pointer hover:bg-lightHover
             hover:-translate-y-1 dark:hover:bg-darkHover dark:hover:shadow-white
 "
@@ -66,7 +65,7 @@ const Work = ({ isDarkMode }) => {
               </div>
 
               {/* Buttons */}
-              <div className="flex items-center justify-between mt-8">
+              <div className="flex items-center justify-between  mt-6 px-0">
                 <a
                   href={project.githubUrl}
                   target="_blank"
@@ -90,7 +89,7 @@ const Work = ({ isDarkMode }) => {
       </div>
 
       {/* Show More Button */}
-      <p className="w-max flex items-center justify-center gap-2 border border-gray-500 text-gray-800 dark:text-white rounded-full py-3 px-8 mx-auto mt-16 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300">
+      {/* <p className="w-max flex items-center justify-center gap-2 border border-gray-500 text-gray-800 dark:text-white rounded-full py-3 px-8 mx-auto mt-16 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300">
         Show More
         <Image
           src={
@@ -99,7 +98,7 @@ const Work = ({ isDarkMode }) => {
           alt="Right arrow"
           className="w-4"
         />
-      </p>
+      </p> */}
     </section>
   );
 };

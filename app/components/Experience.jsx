@@ -21,7 +21,7 @@ export default function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative p-5 py-16 overflow-visible"
+      className="relative px-[7%] md:px-[10%] lg:px-[10%] py-24 overflow-visible"
     >
       <h4 className="text-center mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400">
         Where I’ve Worked
@@ -37,7 +37,7 @@ export default function Experience() {
       </p>
 
       {/* Timeline line only on desktop */}
-      <div className="hidden md:block absolute left-48 top-60 h-[calc(87%-8rem)] w-[2px]">
+      <div className="hidden md:block absolute left-[14.15%] top-64 h-[calc(80%-8rem)] w-[2px]">
         <div className="w-full h-full bg-gray-600 dark:bg-gray-300/5 rounded-full" />
         <motion.div
           style={{ scaleY: timelineScale }}

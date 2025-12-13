@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 const Services = () => {
   return (
-    <div id="services" className="w-full px-[10%] py-16">
+    <div id="services" className="w-full px-[7%] md:px-[10%] lg:px-[10%] py-24">
       <h4 className="text-center mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400">
         What I Offer
       </h4>
@@ -19,7 +19,7 @@ const Services = () => {
         {serviceData.map(({ title, description, link }, index) => (
           <div
             key={index}
-            className="border border-gray-400 rounded-lg px-8 py-12
+            className="border border-gray-400 rounded-lg px-8 py-10
             hover:shadow-black cursor-pointer hover:bg-lightHover
             hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
           >
