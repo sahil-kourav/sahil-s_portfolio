@@ -4,13 +4,16 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import Skills from "./components/Skills";
 import Contact from "./components/Contect";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
-import IntroAnimation from "./components/ui/IntroAnimations";
+import IntroAnimation from "./components/animations/IntroAnimations";
+import Experience from "./components/Experience";
+
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [introDone, setIntroDone] = useState(false); 
+  const [introDone, setIntroDone] = useState(false);
 
   useEffect(() => {
     if (
@@ -42,12 +45,14 @@ export default function Home() {
           <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <Header isDarkMode={isDarkMode} />
           <About isDarkMode={isDarkMode} />
+          <Skills />
           <Services isDarkMode={isDarkMode} />
+          <Experience isDarkMode={isDarkMode}/>
           <Work isDarkMode={isDarkMode} />
           <Contact isDarkMode={isDarkMode} />
           <Footer isDarkMode={isDarkMode} />
         </div>
-       )} 
+      )}
     </>
   );
 }

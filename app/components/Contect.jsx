@@ -1,4 +1,3 @@
-
 // import React from 'react'
 // import Image from 'next/image'
 // import { assets } from '@/assets/assets'
@@ -94,19 +93,6 @@
 
 // export default Contact
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -139,42 +125,22 @@ const Contact = () => {
   };
 
   return (
-    <motion.div
-    initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+    <div
       id="contact"
       className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] 
                  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
     >
       {/* --- Section Title --- */}
-      <motion.h4
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="text-center mb-2 text-lg font-Ovo"
-      >
+      <h4 className="text-center mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400">
         Connect with me
-      </motion.h4>
+      </h4>
 
-      <motion.h2
-        initial={{ y: -30, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.2 }}
-        className="text-center text-5xl font-Ovo"
-      >
-        Get in touch
-      </motion.h2>
+      <h2 className="text-center text-5xl font-Ovo">Get in touch</h2>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
-      >
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-16 font-Ovo leading-6 text-gray-700 dark:text-gray-300">
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.
-      </motion.p>
+      </p>
 
       {/* --- Form --- */}
       <motion.form
@@ -236,15 +202,16 @@ const Contact = () => {
         </motion.button>
 
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-4 text-center text-gray-500"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          className="mt-4 text-center text-gray-500 dark:text-gray-400 leading-relaxed"
         >
           {result}
         </motion.p>
       </motion.form>
-    </motion.div>
+    </div>
   );
 };
 
