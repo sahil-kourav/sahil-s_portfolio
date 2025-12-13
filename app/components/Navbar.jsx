@@ -2,7 +2,7 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
 
@@ -23,7 +23,6 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
     });
   }, []);
 
-
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
@@ -33,19 +32,23 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex
         items-center justify-between z-50 ${
-          isScroll ? "bg-white/25 bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""
+          isScroll
+            ? "bg-white/25 bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
+            : ""
         }`}
       >
- <h2
-          className="text-3xl sm:text-4xl font-extrabold tracking-tight 
-  text-gray-900 dark:text-white select-none mb-2 mr-36"
-        >
+        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mb-2 mr-36">
           Sahil<span className="text-[#ff2d55]">.</span>
         </h2>
 
-
-       <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
-        ${isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`} >
+        <ul
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
+        ${
+          isScroll
+            ? ""
+            : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
+        }`}
+        >
           <li>
             <a className="font-Ovo" href="#top">
               Home
@@ -75,8 +78,11 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
         <div className="flex items-center gap-4">
           <button>
-            <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="" className="w-6"  
-            onClick={()=> setIsDarkMode(prev => !prev)}
+            <Image
+              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
+              alt=""
+              className="w-6"
+              onClick={() => setIsDarkMode((prev) => !prev)}
             />
           </button>
 
@@ -86,11 +92,19 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             dark:border-white/50"
           >
             Contact
-            <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="" className="w-3" />
+            <Image
+              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              alt=""
+              className="w-3"
+            />
           </a>
 
           <button className="block md:hidden ml-3" onClick={openMenu}>
-            <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt="" className="w-6" />
+            <Image
+              src={isDarkMode ? assets.menu_white : assets.menu_black}
+              alt=""
+              className="w-6"
+            />
           </button>
         </div>
 

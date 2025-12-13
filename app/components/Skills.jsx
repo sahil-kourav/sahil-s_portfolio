@@ -27,15 +27,12 @@ export default function App() {
             <button
               key={key}
               onClick={() => setActiveCategory(category)}
-              className={`
-    px-5 py-2 rounded-full text-sm font-medium capitalize 
-    transition-all duration-300 border 
-    ${
-      activeCategory === category
-        ? "bg-gray-300 text-black border-gray-400 dark:bg-gray-700 dark:text-white dark:border-gray-600"
-        : "bg-transparent text-slate-600 dark:text-slate-400 border-slate-300 dark:border-slate-700 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500"
-    }
-  `}
+              className={`px-5 py-2 rounded-full text-sm font-medium capitalize transition-all duration-300 border 
+            ${
+              activeCategory === category
+                ? "bg-gray-300 text-black border-gray-400 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+                : "bg-transparent text-slate-600 dark:text-slate-400 border-slate-300 dark:border-slate-700 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500"
+            }`}
             >
               {category}
             </button>
@@ -66,11 +63,7 @@ export default function App() {
 
                 <div className="w-full h-2 rounded-full overflow-hidden bg-gray-200 dark:bg-white/10">
                   <div
-                    className="
-      h-2 rounded-full origin-left 
-      bg-[#00b0f0] dark:bg-[#38c7ff]
-      animate-[grow_1.5s_ease-out]
-    "
+                    className="h-2 rounded-full origin-left bg-[#00b0f0] dark:bg-[#38c7ff] animate-[grow_1.5s_ease-out]"
                     style={{ width: level + "%" }}
                   />
                 </div>

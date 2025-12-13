@@ -7,8 +7,7 @@ const Footer = ({ isDarkMode }) => {
     <div className="mt-20">
       <div className="text-center">
         <h2
-          className="text-3xl sm:text-4xl font-extrabold tracking-tight 
-  text-gray-900 dark:text-white select-none mb-2"
+          className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mb-2"
         >
           Sahil<span className="text-[#ff2d55]">.</span>
         </h2>
