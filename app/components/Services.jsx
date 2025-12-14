@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 const Services = () => {
   return (
-    <div id="services" className="w-full px-[7%] md:px-[10%] lg:px-[10%] py-24">
+    <section id="services" className="w-full relative py-20 md:py-24 px-[7%] md:px-[10%] lg:px-[10%]">
       <h4 className="text-center mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400">
         What I Offer
       </h4>
@@ -15,7 +15,7 @@ const Services = () => {
        An overview of the backend services I offer to build and support scalable web applications.
       </p>
 
-      <div className="grid grid-cols-auto gap-6 my-10">
+      <div className="grid grid-cols-auto gap-6">
         {serviceData.map(({ title, description, link }, index) => (
           <div
             key={index}
@@ -23,7 +23,6 @@ const Services = () => {
             hover:shadow-black cursor-pointer hover:bg-lightHover
             hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white"
           >
-            {/* <Image src={icon} alt="" className="w-10" /> */}
             <h3 className="text-lg my-4 text-gray-700 dark:text-white">
               {title}
             </h3>
@@ -37,7 +36,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -127,7 +127,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className='w-full px-[7%] md:px-[10%] lg:px-[10%] py-20 min-h-screen bg-[url("/footer-bg-color.png")] 
+      className='w-full px-[7%] md:px-[10%] lg:px-[10%] relative py-20 md:py-24 bg-[url("/footer-bg-color.png")] 
                  bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
     >
       {/* --- Section Title --- */}

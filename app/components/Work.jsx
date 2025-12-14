@@ -7,7 +7,7 @@ const Work = ({ isDarkMode }) => {
   return (
     <section
       id="work"
-      className="w-full px-[7%] md:px-[10%] lg:px-[10%] min-h-screen my-12 bg-transparent"
+      className="w-full relative py-20 md:py-24 px-[7%] md:px-[10%] lg:px-[10%] bg-transparent"
     >
       {/* Section Heading */}
       <div className="text-center space-y-3">

@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const About = ({ isDarkMode }) => {
   return (
-    <div id="about" className="w-full px-[7%] md:px-[10%] lg:px-[10%]">
+    <div id="about" className="w-full relative py-8 md:py-8 px-[7%] md:px-[10%] lg:px-[10%]">
       <h4 className="text-center mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400">
         Introduction
       </h4>

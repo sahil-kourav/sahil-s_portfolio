@@ -21,7 +21,7 @@ export default function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative px-[7%] md:px-[10%] lg:px-[10%] py-24 overflow-visible"
+      className="relative py-20 md:py-24 px-[7%] md:px-[10%] lg:px-[10%] overflow-visible"
     >
       <h4 className="text-center mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400">
         Where I’ve Worked
