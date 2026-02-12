@@ -41,46 +41,17 @@ export default function Home() {
       {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
 
       {introDone && (
-        // <div>
-        //   <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        //   <Header isDarkMode={isDarkMode} />
-        //   <About isDarkMode={isDarkMode} />
-        //   <Services isDarkMode={isDarkMode} />
-        //   <Skills isDarkMode={isDarkMode}/>
-        //   <Experience isDarkMode={isDarkMode}/>
-        //   <Work isDarkMode={isDarkMode} />
-        //   <Contact isDarkMode={isDarkMode} />
-        //   <Footer isDarkMode={isDarkMode} />
-        // </div>
-
-
         <div>
-  <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-
-  {/* Hero / Intro */}
-  <Header isDarkMode={isDarkMode} />
-
-  {/* About You */}
-  <About isDarkMode={isDarkMode} />
-
-  {/* What you are good at */}
-  <Skills isDarkMode={isDarkMode} />
-
-  {/* Your professional background */}
-  <Experience isDarkMode={isDarkMode} />
-
-  {/* What you offer */}
-  <Services isDarkMode={isDarkMode} />
-
-  {/* Proof of work */}
-  <Work isDarkMode={isDarkMode} />
-
-  {/* Call to action */}
-  <Contact isDarkMode={isDarkMode} />
-
-  <Footer isDarkMode={isDarkMode} />
-</div>
-
+          <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+          <Header isDarkMode={isDarkMode} />
+          <About isDarkMode={isDarkMode} />
+          <Services isDarkMode={isDarkMode} />
+          <Skills isDarkMode={isDarkMode} />
+          <Experience isDarkMode={isDarkMode} />
+          <Work isDarkMode={isDarkMode} />
+          <Contact isDarkMode={isDarkMode} />
+          <Footer isDarkMode={isDarkMode} />
+        </div>
       )}
     </>
   );

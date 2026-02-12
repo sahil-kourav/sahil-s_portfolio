@@ -30,14 +30,14 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
 
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex
         items-center justify-between z-50 ${
           isScroll
             ? "bg-white/25 bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
             : ""
         }`}
       >
-        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mb-2 mr-36">
+        <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mr-36">
           Sahil<span className="text-[#ff2d55]">.</span>
         </h2>
 

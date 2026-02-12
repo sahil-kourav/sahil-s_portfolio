@@ -94,14 +94,14 @@ export default function Skills() {
   );
 
   return (
-    <section id="skills" className="relative py-20 md:py-24 px-6">
+    <section id="skills" className="relative py-10 md:py-12 px-6">
 
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block mb-4 text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
+          <p className="text-xs mb-4 tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400">
             What I Know
-          </span>
+          </p>
           <h2 className="text-5xl font-Ovo text-gray-900 dark:text-white">
             Skills & Tools
           </h2>
