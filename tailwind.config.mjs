@@ -8,18 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        // lightHover: '#fcf4ff',
-        // darkHover: '#2a004a',
-        // darkTheme: '#11001f',
         lightHover: "#fcf4ff",
         darkHover: "#21262d",
         darkTheme: "#0d1117",
       },
       fontFamily: {
-        outfit: ["var(--font-outfit)", "sans-serif"],
-        ovo: ["var(--font-ovo)", "serif"],
+        Outfit: ["Outfit", "sans-serif"],
+        Ovo: ["Ovo", "serif"],
       },
-
       boxShadow: {
         black: "4px 4px 0 #000",
         white: "4px 4px 0 #fff",
