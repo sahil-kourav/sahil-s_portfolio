@@ -169,41 +169,55 @@ export default Navbar;
 
 
 
-
-
-
-
-
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         // lightHover: '#fcf4ff',
-//         // darkHover: '#2a004a',
-//         // darkTheme: '#11001f',
-//         lightHover: "#fcf4ff",
-//         darkHover: "#21262d",
-//         darkTheme: "#0d1117",
-//       },
-//       fontFamily: {
-//         Outfit: ["Outfit", "sans-serif"],
-//         Ovo: ["Ovo", "serif"],
-//       },
-//       boxShadow: {
-//         black: "4px 4px 0 #000",
-//         white: "4px 4px 0 #fff",
-//       },
-//       gridTemplateColumns: {
-//         auto: "repeat(auto-fit, minmax(200px, 1fr))",
-//       },
-//     },
+// {
+//   "name": "own-portfolio",
+//   "version": "0.1.0",
+//   "private": true,
+//   "scripts": {
+//     "dev": "next dev",
+//     "build": "next build",
+//     "start": "next start",
+//     "lint": "eslint"
 //   },
-//   darkMode: "class",
-//   plugins: [],
-// };
+//   "dependencies": {
+//     "@radix-ui/react-slot": "^1.2.4",
+//     "@react-three/drei": "9.88.17",
+//     "@react-three/fiber": "8.15.12",
+//     "@react-three/postprocessing": "2.15.0",
+//     "@tailwindcss/vite": "^4.1.17",
+//     "class-variance-authority": "^0.7.1",
+//     "clsx": "^2.1.1",
+//     "framer-motion": "^12.34.0",
+//     "gsap": "^3.14.2",
+//     "lucide-react": "^0.563.0",
+//     "motion": "^12.23.24",
+//     "next": "15.1.3",
+//     "postprocessing": "^6.38.0",
+//     "react": "18.3.1",
+//     "react-dom": "18.3.1",
+//     "react-icons": "^5.5.0",
+//     "tailwind-merge": "^3.4.0",
+//     "three": "^0.182.0"
+//   },
+//   "devDependencies": {
+//     "autoprefixer": "^10.4.24",
+//     "eslint": "^8.57.0",
+//     "eslint-config-next": "14.2.5",
+//     "postcss": "^8.5.6",
+//     "tailwindcss": "^3.4.18"
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
