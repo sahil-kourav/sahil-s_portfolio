@@ -68,9 +68,9 @@ const Footer = () => {
       {/* Decorative Gradient */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50" />
 
-      <div className="max-w-6xl mx-auto px-5 pt-16 pb-8">
+      <div className="max-w-6xl mx-auto px-1 pt-10 pb-8">
         {/* Top */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
             Sahil<span className="text-[#ff2d55]">.</span>
           </h2>

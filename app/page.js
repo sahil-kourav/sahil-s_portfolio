@@ -52,7 +52,7 @@ export default function Home() {
           <Contact isDarkMode={isDarkMode} />
           <Footer isDarkMode={isDarkMode} />
         </div>
-      )}
+      )} 
     </>
   );
 }
