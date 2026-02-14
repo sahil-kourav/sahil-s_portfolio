@@ -252,26 +252,3 @@ export const skills = [
   { name: "Postman", level: 85, category: "tools" },
 ];
 
-export const experiences = [
-  {
-    role: "Web Developer",
-    company: "Brain Mentors",
-    duration: "2022",
-    description:
-      "Built high-performance applications, integrated AI features, and improved user engagement.",
-  },
-  {
-    role: "Web Developer Intern",
-    company: "Mobisoft Technologies",
-    duration: "2022 - 2023",
-    description:
-      "Developed responsive interfaces and contributed to production-ready features.",
-  },
-  {
-    role: "Graduate Engineer",
-    company: "HCL Technologies",
-    duration: "2024 - 2025",
-    description:
-      "Built scalable front-end modules for a GenAI-powered PV Intake App using Next.js and TypeScript.",
-  },
-];

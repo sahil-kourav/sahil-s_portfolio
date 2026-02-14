@@ -1,98 +1,3 @@
-// // import React from 'react'
-// // import Image from 'next/image'
-// // import { assets } from '@/assets/assets'
-
-// // const Contact = () => {
-
-// //   const [result, setResult] = React.useState("");
-
-// //   const onSubmit = async (event) => {
-// //     event.preventDefault();
-// //     setResult("Sending....");
-// //     const formData = new FormData(event.target);
-
-// //     formData.append("access_key", process.env.NEXT_PUBLIC_ACCESS_KEY);
-
-// //     const response = await fetch("https://api.web3forms.com/submit", {
-// //       method: "POST",
-// //       body: formData
-// //     });
-
-// //     const data = await response.json();
-
-// //     if (data.success) {
-// //       setResult("Thank you! Your form has been submitted successfully.");
-// //       event.target.reset();
-// //     } else {
-// //       console.log("Error", data);
-// //       setResult(data.message);
-// //     }
-// //   };
-
-// //   return (
-// //     <div
-// //       id="contact"
-// //       className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
-// //     >
-// //       <h4 className="text-center mb-2 text-lg font-Ovo">
-// //         Connect with me
-// //       </h4>
-
-// //       <h2 className="text-center text-5xl font-Ovo">
-// //         Get in touch
-// //       </h2>
-
-// //       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-// //         I'd love to hear from you! If you have any questions, comments, or feedback,
-// //         please use the form below.
-// //       </p>
-
-// //       <form className="max-w-2xl mx-auto" onSubmit={onSubmit}>
-// //         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
-// //           <input
-// //             type="text"
-// //             name='name'
-// //             placeholder="Enter your name"
-// //             required
-// //             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
-// //           />
-// //           <input
-// //             type="email"
-// //             name='email'
-// //             placeholder="Enter your email"
-// //             required
-// //             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90"
-// //           />
-// //         </div>
-
-// //         <textarea
-// //           rows="6"
-// //           name='message'
-// //           placeholder="Enter your message"
-// //           required
-// //           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90"
-// //         ></textarea>
-
-// //         <button
-// //           type="submit"
-// //           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
-// //         >
-// //           Submit now
-// //           <Image
-// //             src={assets.right_arrow_white}
-// //             alt="Right arrow"
-// //             className="w-4"
-// //           />
-// //         </button>
-
-// //         <p className="mt-4 text-center text-gray-500">{result}</p>
-// //       </form>
-// //     </div>
-// //   )
-// // }
-
-// // export default Contact
-
 // "use client";
 // import React from "react";
 // import Image from "next/image";
@@ -249,11 +154,10 @@ import {
   Send, 
   CheckCircle2, 
   Loader2,
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram
 } from "lucide-react";
+
+import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -281,12 +185,31 @@ const Contact = () => {
     }
   ];
 
+
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" }
+    {
+      icon: FaXTwitter,
+      label: "X (Twitter)",
+      href: "https://x.com/sahilkourav_",
+    },
+    {
+      icon: FaLinkedin,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/sahilkourav",
+    },
+    { 
+      icon: FaGithub, 
+      label: "GitHub", 
+      href: "https://github.com/sahil-kourav" 
+  
+    },
+    { 
+      icon: FaInstagram, 
+      label: "Instagram", 
+      href: "https://instagram.com/sahilkourav_" 
+    },
   ];
+
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -343,10 +266,7 @@ const Contact = () => {
 
       <div className="relative z-10">
         {/* Section Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+        <div
           className="text-center mb-16"
         >
           <h4 className="mb-2 text-sm uppercase tracking-widest text-gray-700 dark:text-gray-400 font-medium">
@@ -361,15 +281,11 @@ const Contact = () => {
             I'd love to hear from you! Whether you have a question, want to collaborate, 
             or just want to say hi, feel free to reach out.
           </p>
-        </motion.div>
+        </div>
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Left Side - Contact Info & Social */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-8"
+          <div className="space-y-8"
           >
             {/* Contact Information Cards */}
             <div className="space-y-4">
@@ -378,13 +294,8 @@ const Contact = () => {
               </h3>
               
               {contactInfo.map((info, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  whileHover={{ scale: 1.02, x: 5 }}
-                  className="group"
+                <div
+                  key={index} className="group"
                 >
                   {info.link ? (
                     <a
@@ -418,7 +329,7 @@ const Contact = () => {
                       </div>
                     </div>
                   )}
-                </motion.div>
+                </div>
               ))}
             </div>
 
@@ -430,16 +341,11 @@ const Contact = () => {
               
               <div className="flex flex-wrap gap-4">
                 {socialLinks.map((social, index) => (
-                  <motion.a
+                  <a
                     key={index}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.3, delay: 0.1 * index }}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    whileTap={{ scale: 0.95 }}
                     className="w-12 h-12 rounded-xl bg-white dark:bg-gray-900/50 
                              border border-gray-400 dark:border-gray-700
                              hover:border-gray-500 dark:hover:border-gray-600
@@ -450,17 +356,14 @@ const Contact = () => {
                     aria-label={social.label}
                   >
                     <social.icon className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-white" />
-                  </motion.a>
+                  </a>
                 ))}
               </div>
             </div>
 
             {/* Additional Info Box */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="p-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 
+            <div
+             className="p-6 rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 
                        dark:from-blue-950/20 dark:to-purple-950/20
                        border border-blue-200 dark:border-blue-800"
             >
@@ -471,21 +374,17 @@ const Contact = () => {
                 I'm always interested in hearing about new projects and opportunities. 
                 Let's create something amazing together!
               </p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Right Side - Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
+          <div          >
             <form onSubmit={onSubmit} className="space-y-6">
               {/* Name and Email Grid */}
               <div className="grid sm:grid-cols-2 gap-6">
                 <motion.div whileFocus={{ scale: 1.02 }} className="space-y-2">
                   <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Name
+                    Name 
                   </label>
                   <input
                     type="text"
@@ -528,7 +427,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Project Inquiry"
+                  placeholder="Enter subject here..."
                   required
                   className="w-full p-3.5 outline-none border border-gray-400 dark:border-gray-700
                            rounded-xl bg-white dark:bg-gray-900/50
@@ -547,7 +446,7 @@ const Contact = () => {
                 <textarea
                   rows="6"
                   name="message"
-                  placeholder="Tell me about your project..."
+                  placeholder="Enter your message here..."
                   required
                   className="w-full p-4 outline-none border border-gray-400 dark:border-gray-700
                            rounded-xl bg-white dark:bg-gray-900/50
@@ -564,11 +463,11 @@ const Contact = () => {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-4 px-6 flex items-center justify-center gap-3
+                className={`w-full py-3 px-6 flex items-center justify-center gap-3
                          bg-gradient-to-r from-blue-600 to-purple-600
                          text-white font-semibold rounded-xl
                          hover:from-blue-700 hover:to-purple-700
-                         hover:shadow-2xl hover:shadow-blue-500/30 dark:hover:shadow-blue-500/20
+                         hover:shadow-md hover:shadow-blue-500/30 dark:hover:shadow-blue-500/20
                          transition-all duration-500
                          ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
@@ -608,7 +507,7 @@ const Contact = () => {
                 </motion.div>
               )}
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

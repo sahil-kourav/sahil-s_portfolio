@@ -30,14 +30,14 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
 
       <nav 
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2 flex
-        items-center justify-between z-50 ${
+        className={`w-full fixed px-5 lg:px-[7%] py-4 flex
+        items-center justify-between mt-0 z-50 ${
           isScroll
             ? "bg-white/25 bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
             : ""
         }`}
       >
-        <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mr-36">
+        <h2 className="text-3xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white select-none mr-36">
           Sahil<span className="text-[#ff2d55]">.</span>
         </h2>
 
@@ -62,6 +62,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <li>
             <a className="font-Ovo" href="#skills">
               Skills
+            </a>
+          </li>
+          <li>
+            <a className="font-Ovo" href="#experience">
+              Experience
             </a>
           </li>
           <li>
@@ -99,7 +104,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             />
           </a>
 
-          <button className="block md:hidden ml-3" onClick={openMenu}>
+          <button className="block md:hidden ml-4 mr-3" onClick={openMenu}>
             <Image
               src={isDarkMode ? assets.menu_white : assets.menu_black}
               alt=""
@@ -121,7 +126,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               className="w-5 cursor-pointer"
             />
           </div>
-
           <li>
             <a className="font-Ovo" href="#top" onClick={closeMenu}>
               Home
@@ -143,6 +147,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </a>
             </li>
           <li>
+            <a className="font-Ovo" href="#experience" onClick={closeMenu}>
+              Experience
+            </a>
+          </li>
+          <li>
             <a className="font-Ovo" href="#work" onClick={closeMenu}>
               My Work
             </a>
@@ -159,65 +168,3 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-// {
-//   "name": "own-portfolio",
-//   "version": "0.1.0",
-//   "private": true,
-//   "scripts": {
-//     "dev": "next dev",
-//     "build": "next build",
-//     "start": "next start",
-//     "lint": "eslint"
-//   },
-//   "dependencies": {
-//     "@radix-ui/react-slot": "^1.2.4",
-//     "@react-three/drei": "9.88.17",
-//     "@react-three/fiber": "8.15.12",
-//     "@react-three/postprocessing": "2.15.0",
-//     "@tailwindcss/vite": "^4.1.17",
-//     "class-variance-authority": "^0.7.1",
-//     "clsx": "^2.1.1",
-//     "framer-motion": "^12.34.0",
-//     "gsap": "^3.14.2",
-//     "lucide-react": "^0.563.0",
-//     "motion": "^12.23.24",
-//     "next": "15.1.3",
-//     "postprocessing": "^6.38.0",
-//     "react": "18.3.1",
-//     "react-dom": "18.3.1",
-//     "react-icons": "^5.5.0",
-//     "tailwind-merge": "^3.4.0",
-//     "three": "^0.182.0"
-//   },
-//   "devDependencies": {
-//     "autoprefixer": "^10.4.24",
-//     "eslint": "^8.57.0",
-//     "eslint-config-next": "14.2.5",
-//     "postcss": "^8.5.6",
-//     "tailwindcss": "^3.4.18"
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
